@@ -19,6 +19,14 @@ int main()
     int num1, num2;
     printf("enter two numbers");
     scanf("%d %d", &num1, &num2);
-    printf("Sum=%d, Diff=%d, Product=%d, Quotient=%f", num1 + num2, num1 - num2, num1 * num2, (float)num1 / (float)num2);
+    if (num2 != 0)
+    {
+        printf("Sum=%d, Diff=%d, Product=%d, Quotient=%f", num1 + num2, num1 - num2, num1 * num2, (float)num1 / (float)num2);
+    }
+    else
+    {
+        printf("Sum+%d, Diff=%d, Product=%d,", num1 + num2, num1 - num2, num1 * num2);
+        printf(" Quotient = undefined");
+    }
     return 0;
 }
